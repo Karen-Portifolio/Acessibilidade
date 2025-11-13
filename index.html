@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alessia Cara</title>
+
+  <!-- Google Fonts e Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="p-5 bg-light">
+    <nav class="container d-flex justify-content-between align-items-center flex-wrap">
+      <img src="img/images.jpg" class="nav-img" alt="Logo Tropicália" loading="lazy">
+
+      <ul class="nav mt-3 mt-md-0">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Menu de acessibilidade -->
+      <div class="menu-acessibilidade position-relative">
+        <button id="botao-acessibilidade" class="rotacao-botao btn btn-outline-secondary" aria-expanded="false" aria-label="Abrir menu de acessibilidade">
+          Acessibilidade
+        </button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade d-none position-absolute bg-white shadow p-2 rounded" role="menu">
+          <button id="botao-alto-contraste" class="btn btn-sm btn-outline-dark w-100 mb-1" role="menuitem">Alto Contraste</button>
+          <button id="aumentar-fonte" class="btn btn-sm btn-outline-dark w-100 mb-1" role="menuitem">+ Fonte</button>
+          <button id="diminuir-fonte" class="btn btn-sm btn-outline-dark w-100" role="menuitem">- Fonte</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Seção Início -->
+    <section id="inicio" class="my-5">
+      <div class="inicio-fundo d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start">
+        <div class="esquerda-conteudo mb-4 mb-lg-0">
+          <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+          <img src="img/images.jpg" alt="Logo Tropicália" class="mb-3 img-fluid" width="563" height="278" loading="lazy">
+          <a href="#alessia-cara" class="btn btn-primary btn-lg fw-semibold">Quero conhecer!</a>
+        </div>
+        <img src="img/photo-credit-shervin-lainez-.webp" alt="A cantora Alessia Cara" title="CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio rounded">
+      </div>
+    </section>
+
+    <!-- Seção Alessia Cara -->
+    <section id="alessia-cara" class="my-5 pt-5" tabindex="0" aria-label="Seção explicativa sobre a Alessia Cara">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="img/GettyImages-840010012.webp" alt="Foto de Alessia Cara" class="rounded-pill img-fluid" width="273" height="331" loading="lazy">
+        </div>
+        <div class="col-md-8">
+          <h2>Alessia Cara: a voz que inspira a beleza real</h2>
+          <p>Alessia Cara é uma cantora e compositora canadense muito talentosa. Nascida em 11 de julho de 1996, no Canadá, começou sua carreira postando covers no YouTube. Suas músicas inspiram mulheres ao mostrar que ser diferente é valioso e que a verdadeira beleza está em ser autêntica e fiel a si mesma.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+      <h2 class="text-center pt-5">Galeria</h2>
+      <div class="container p-3 mt-3 fundo-galeria">
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <img src="img/20250219163937Alessia-Cara-lanca-novo-album.png" alt="Capa de álbum de Alessia Cara" class="img-fluid rounded-5" loading="lazy">
+          </div>
+          <div class="col-md-4">
+            <img src="img/alessia-cara.jpg" alt="Alessia Cara em show" class="img-fluid rounded-5" loading="lazy">
+          </div>
+          <div class="col-md-4">
+            <img src="img/image_sRh6i5A.webp" alt="Retrato artístico de Alessia Cara" class="img-fluid rounded-5" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario bg-light p-4 shadow-sm">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-cent
